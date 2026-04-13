@@ -25,7 +25,7 @@ Make sure you have the following:
  
 2. Extract the .zip file
 
-3. Copy the `timelapse_recorder` folder to your plugin folder
+3. Rename the `timelapse_recorder-vx.x.x` folder to `timelapse_recorder` and move it into your plugin folder
 
 
 ## Usage
