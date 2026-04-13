@@ -2,7 +2,6 @@
 
 A Timelapse Recorder plugin for GIMP 3.0+ using FFmpeg (currently only for Windows)
 
----
 
 ## Requirements
 
@@ -12,9 +11,8 @@ Make sure you have the following:
 * GIMP 3.0 or newer
 * FFmpeg
 
----
 
-### Install FFmpeg (if you don't have it already)
+## Install FFmpeg (if you don't have it already)
 
 * via winget:
     `winget install ffmpeg`
@@ -29,7 +27,6 @@ Make sure you have the following:
 
 3. Copy the `timelapse_recorder` folder to your plugin folder
 
----
 
 ## Usage
 
@@ -43,7 +40,6 @@ Make sure you have the following:
 5. Click **Start** to begin recording
 6. Click **Stop** to finish
 
----
 
 ## Notes
 
