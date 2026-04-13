@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk+" version="3.0"/>
+
+    <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">20</property>
+        <property name="margin_bottom">15</property>
+
+        <child>
+            <object class="GtkGrid">
+                <property name="row_spacing">20</property>
+                <property name="column_spacing">20</property>
+                <property name="row_homogeneous">True</property>
+
+                <child>
+                    <object class="GtkLabel" id="output_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel" id="capture_mode_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel"id="capture_fps_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel"id="video_fps_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">3</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel"id="advanced_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">5</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkEntry" id="path_text">
+                        <property name="hexpand">True</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkButton" id="path_button">
+                        <property name="use_underline">True</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">0</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkComboBoxText" id="mode_combo">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkSpinButton" id="capture_spin">
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkBox">
+                        <property name="orientation">Vertical</property>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">━┓</property>
+                                <property name="halign">Start</property>
+                                <property name="hexpand">True</property>
+                                <property name="margin_top">6</property>
+                                <property name="margin_bottom">5</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel" id="speed_text">
+                                <property name="halign">Start</property>
+                                <property name="hexpand">True</property>
+                                <property name="margin_bottom">1</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">━┛</property>
+                                <property name="halign">Start</property>
+                                <property name="hexpand">True</property>
+                                <property name="margin_top">0</property>
+                            </object>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="left_attach">2</property>
+                        <property name="top_attach">2</property>
+                        <property name="height">2</property>
+                        <property name="width">1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkSpinButton" id="video_spin">
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">3</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel"id="draw_label">
+                        <property name="halign">Start</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">4</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkBox">
+                        <property name="orientation">Horizontal</property>
+                        <property name="spacing">10</property>
+                        <child>
+                            <object class="GtkCheckButton" id="draw_mouse_check">
+                                <property name="use_underline">True</property>
+                            </object>
+                        </child>
+
+                        <child>
+                            <object class="GtkCheckButton" id="draw_area_check">
+                                <property name="use_underline">True</property>
+                            </object>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">4</property>
+                        <property name="width">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkEntry" id="advanced_text">
+                        <property name="hexpand">True</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">5</property>
+                        <property name="width">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkButton" id="clear_button">
+                        <property name="use_underline">True</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">5</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkButton" id="start_button">
+                        <property name="use_underline">True</property>
+                        <property name="width_request">130</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">1</property>
+                        <property name="width">1</property>
+                        <property name="height">2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object class="GtkLabel" id="time_text">
+                        <property name="justify">Center</property>
+                    </object>
+                    <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">3</property>
+                        <property name="height">2</property>
+                    </packing>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
